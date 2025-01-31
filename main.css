@@ -1,0 +1,283 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho {
+    background-color: #473d30; 
+    padding: 10px 0;
+}
+
+#cabecalho .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#cabecalho h1 {
+    color: #666; 
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+#cabecalho .logo {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+#cabecalho nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cabecalho nav ul li {
+    margin-right: 20px;
+}
+
+#cabecalho nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#cabecalho nav ul li a.active {
+    font-weight: bold;
+}
+
+#cabecalho .btn-group .btn-primary {
+    background-color: #32cd32; 
+    border: none;
+    color: white;
+}
+
+#cabecalho .btn-group .btn-primary:hover {
+    background-color: #228b22;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: #D2B48C;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.imagem-sobre {
+    width: 25%; 
+    max-width: 300px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sobre p {
+    flex: 1;
+    text-align: justify;
+}
+
+.sobre h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#planos {
+    background-color: #F5E0C2;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.container-card {
+    max-width: 100%;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #D2B48C;
+    padding: 10px;
+    color: #4A2F1B;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #8C6239;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #704C2A;
+}
+
+.contato {
+    background-color: #C3A384; 
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.contato h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.form-contato label {
+    font-weight: bold;
+    color: #4A2F1B;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 10px;
+    border: 1px solid #8B5E3C;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-contato textarea {
+    resize: none; 
+    overflow: hidden; 
+}
+
+.form-contato button {
+    background-color: #32cd32;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #228b22;
+}
+
+.footer {
+    background-color: #473d30; 
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+    #cabecalho .navbar {
+        flex-wrap: nowrap;
+    }
+
+    /* .container-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    } */
+}
+
+@media screen and (max-width: 640px) {
+    #cabecalho .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cabecalho .btn-group {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #cabecalho .navbar-toggler {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+
+    /* .container-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    } */
+}
